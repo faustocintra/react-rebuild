@@ -1,10 +1,18 @@
 import React from 'react';
-import AppHeader from './_ui/AppHeader'
+import HeaderBar from './ui/HeaderBar'
+import Footer from './ui/Footer'
+import Contents from './ui/Contents'
+import './global.scss';
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <AppHeader title="Escola Agora Vai" />
+    <BrowserRouter>
+      <HeaderBar />
+      <Contents />
+    </BrowserRouter>
+    <Footer />
     </>
   );
 }

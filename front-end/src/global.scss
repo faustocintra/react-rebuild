@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+
+@import './variables.scss';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: $defaultFont;
+   font-size: 18px;
+   font-weight: regular;
+}
+
+body {
+   background: $defaultBg;
+   color: $defaultFg;
+}
+
+h1 {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+a {
+   color: $accent;
+   text-decoration: none;
+   transition: filter 1s;
+}
+
+a:hover {
+   filter: brightness(1.5);
+}
