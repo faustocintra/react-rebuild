@@ -30,3 +30,34 @@ a {
 a:hover {
    filter: brightness(1.5);
 }
+
+table {
+   border-collapse: collapse;   
+
+   tr {
+      
+      border-bottom: solid 1px rgba($defaultFg, 0.3);
+
+      td, th {
+         
+         padding: 10px;
+      }
+
+      th {
+         color: $secondary;
+         
+      }
+
+      &:nth-child(odd) {
+         background: #fff;
+      }
+
+      &:nth-child(even) {
+         background: $defaultBg;
+      }
+
+      &:hover {
+         filter: brightness(90%);
+      }
+   }
+}
